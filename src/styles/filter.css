@@ -1,0 +1,93 @@
+/* src/SearchFilter.css */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.container {
+    width: 70%;
+    /* max-width: 500px; */
+    height: fit-content;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.search-filter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+
+}
+
+.search-filter input{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 40%;
+}
+.search-filter select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 35%;
+}
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+ .slick-next{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    z-index: 1;
+ }
+ .slick-next:before{
+    color: black;
+    font-size: 25px;
+}
+.slick-prev{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    z-index: 1;
+    padding-right: 5rem; 
+}
+.slick-prev:before{
+    color: black;
+    font-size: 25px;
+}
+.results {
+    margin-top: 20px;
+}
+
+.result-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.main-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+.bug-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
