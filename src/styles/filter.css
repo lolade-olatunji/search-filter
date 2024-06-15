@@ -6,7 +6,7 @@
     width: 70%;
     /* max-width: 500px; */
     height: fit-content;
-    margin: 0 auto;
+    margin: 10rem auto;
     padding: 2rem 3rem;
     background-color: #fff;
     border-radius: 8px;
@@ -71,7 +71,9 @@
 .results {
     margin-top: 20px;
 }
-
+.results h3{
+    font-family: "inter";
+}
 .result-item {
     padding: 10px;
     border-bottom: 1px solid #ddd;
@@ -90,4 +92,21 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+@media screen and (max-width: 1100px) {
+     .search-filter input{
+    width: 80%;
+}
+.search-filter select {
+    width: 80%;
+}
+}
+
+@media screen and (max-width: 700px) {
+     .search-filter input{
+    width: 90%;
+}
+.search-filter select {
+    width: 90%;
+}
 }

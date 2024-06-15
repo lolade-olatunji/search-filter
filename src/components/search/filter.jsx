@@ -9,16 +9,16 @@ const data = [
     id: 1,
     category: "Cheese Burgers",
     items: [
-      { id: 101, name: "American Cheese", image: "/cheese/che1.png" },
-      { id: 102, name: "Cheddar", image: "/cheese/che2.png" },
-      { id: 103, name: "Monterey Jack", image: "/cheese/che3.png" },
-      { id: 104, name: "Brie", image: "/cheese/che4.png" },
-      { id: 105, name: "Provolone", image: "/cheese/che5.png" },
-      { id: 106, name: "Smoked Gouda", image: "/cheese/che6.png" },
-      { id: 107, name: "Stilton", image: "/cheese/che7.png" },
-      { id: 108, name: "Parmigiano-Reggiano", image: "/cheese/che8.png" },
-      { id: 109, name: "Comté", image: "/cheese/che9.png" },
-      { id: 110, name: "Halloumi", image: "/cheese/che10.png" }
+      { id: 101, name: "Halloumi", image: "/cheese/che1.png" },
+      { id: 102, name: "American cheese", image: "/cheese/che2.png" },
+      { id: 103, name: "Comté", image: "/cheese/che3.png" },
+      { id: 104, name: "Stilton", image: "/cheese/che4.png" },
+      { id: 105, name: "Parmigiano-Reggiano", image: "/cheese/che5.png" },
+      { id: 106, name: "Brie", image: "/cheese/che6.png" },
+      { id: 107, name: "Smoked Gouda", image: "/cheese/che7.png" },
+      { id: 108, name: "Provolone", image: "/cheese/che8.png" },
+      { id: 109, name: "Monterey Jack", image: "/cheese/che9.png" },
+      { id: 110, name: "Chedder", image: "/cheese/che10.png" }
     ]
   },
   {
@@ -127,8 +127,28 @@ const SearchFilter = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: Math.min(filteredData.length, 3),
-    slidesToScroll: Math.min(filteredData.length, 3)
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      }
+    ]
   };
 
   return (

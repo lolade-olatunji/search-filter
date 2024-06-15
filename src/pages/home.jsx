@@ -1,11 +1,14 @@
 import React from 'react';
+import Nav from "../components/nav";
 import SearchFilter from '../components/search/filter';
+import Footer from "../components/footer";
 
 function home() {
   return (
     <div>
-        <h1>Search/Filter</h1>
+        <Nav />
         <SearchFilter />
+        <Footer />
     </div>
   )
 }
